@@ -9,6 +9,11 @@ class myclass2 extends myclass1 {
     void sum(float a, float b) {
         System.out.println((a + b));
     }
+
+    void sum(String a, String b)
+    {
+        System.out.println(a.concat(b));
+    }
 }
 
 class test {
@@ -17,6 +22,7 @@ class test {
         myclass2 obj1 = new myclass2();
         obj1.sum(4, 5);
         obj1.sum(4.0f, 5.0f);
+        obj1.sum("I am the king", "of own world");
     }
 }
 
